@@ -1,5 +1,5 @@
 title = "Hugo: A Fast and Flexible Website Generator"
-baseurl = "http://gohugo.io/"
+baseurl = "http://thingiverse.io/"
 MetaDataFormat = "yaml"
 pluralizeListTitles = false
 
@@ -7,40 +7,20 @@ pluralizeListTitles = false
   plainIDAnchors = true
 
 [params]
-  description = "Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go"
-  author = "Steve Francia (spf13) and friends"
+  description = "Documentation for thingiverseIO, the new kickass motherfucker in town"
+  author = "Joern Weissenborn and friends"
 
 [taxonomies]
   tag = "tags"
   group = "groups"
 
 [[menu.main]]
-    name = "Download Hugo"
+    name = "Download"
     pre = "<i class='fa fa-download'></i>"
-    url = "https://github.com/spf13/hugo/releases"
+    url = "https://github.com/ThingiverseIO/thingiverseIO"
     weight = -200
 [[menu.main]]
-    name = "Site Showcase"
-    pre = "<i class='fa fa-cubes'></i>"
-    url = "/showcase/"
-    weight = -180
-[[menu.main]]
-    name = "Theme Showcase"
-    pre = "<i class='fa fa-puzzle-piece'></i>"
-    url = "http://themes.gohugo.io"
-    weight = -170
-[[menu.main]]
-    name = "Press & Articles"
-    pre = "<i class='fa fa-bullhorn'></i>"
-    url = "/community/press/"
-    weight = -160
-[[menu.main]]
-    name = "Discuss Hugo"
-    pre = "<i class='fa fa-comments'></i>"
-    url = "http://discuss.gohugo.io/"
-    weight = -150
-[[menu.main]]
-    name = "About Hugo"
+    name = "About tvIO"
     identifier = "about"
     pre = "<i class='fa fa-heart'></i>"
     weight = -110
@@ -50,45 +30,10 @@ pluralizeListTitles = false
     pre = "<i class='fa fa-road'></i>"
     weight = -100
 [[menu.main]]
-    name = "Content"
-    identifier = "content"
+    name = "Guide"
+    identifier = "guide"
     pre = "<i class='fa fa-file-text'></i>"
     weight = -90
-[[menu.main]]
-    name = "Themes"
-    identifier = "themes"
-    pre = "<i class='fa fa-desktop'></i>"
-    weight = -85
-[[menu.main]]
-    parent = "themes"
-    name = "Theme Showcase"
-    url = "http://themes.gohugo.io"
-    weight = -170
-[[menu.main]]
-    name = "Templates"
-    identifier = "layout"
-    pre = "<i class='fa fa-columns'></i>"
-    weight = -80
-[[menu.main]]
-    name = "Taxonomies"
-    identifier = "taxonomy"
-    pre = "<i class='fa fa-tags'></i>"
-    weight = -70
-[[menu.main]]
-    name = "Extras"
-    identifier = "extras"
-    pre = "<i class='fa fa-gift'></i>"
-    weight = -60
-[[menu.main]]
-    name = "Community"
-    identifier = "community"
-    pre = "<i class='fa fa-group'></i>"
-    weight = -50
-[[menu.main]]
-    parent = "community"
-    name = "Discussion Forum"
-    url = "http://discuss.gohugo.io"
-    weight = 150
 [[menu.main]]
     name = "Tutorials"
     identifier = "tutorials"
@@ -100,13 +45,7 @@ pluralizeListTitles = false
     pre = "<i class='fa fa-wrench'></i>"
     weight = -30
 [[menu.main]]
-    name = "Tools"
-    url = "/tools/"
+    name = "Tool"
+    url = "/tool/"
     pre = "<i class='fa fa-cogs'></i>"
     weight = -25
-[[menu.main]]
-    name = "Hugo Cmd Reference"
-    identifier = "commands"
-    pre = "<i class='fa fa-space-shuttle'></i>"
-    weight = -20
-    url = "/commands/"

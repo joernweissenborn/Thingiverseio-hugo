@@ -7,11 +7,11 @@ menu:
     parent: getting started
 next: /overview/installing
 prev: /overview/introduction
-title: Hugo Quickstart Guide
+title: ThingiverseIO Quickstart Guide
 weight: 10
 ---
 
-Building a bookshelf
+Building a quickstart
 ---
 
 In this quickstart, we will build an online bookshelf that will list books and their reviews.

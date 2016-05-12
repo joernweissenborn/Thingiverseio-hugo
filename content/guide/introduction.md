@@ -3,10 +3,10 @@ lastmod: 2015-12-23
 date: 2014-05-14T02:13:50Z
 menu:
   main:
-    parent: content
+    parent: guide
 next: /content/ordering
 prev: /content/types
-title: Archetypes
+title: Abstract
 weight: 50
 toc: true
 ---

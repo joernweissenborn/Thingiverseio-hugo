@@ -11,7 +11,7 @@ title: Release Notes
 weight: 10
 ---
 
-## **0.16.0** TBD
+## **0.6.0** TBD
 
 Hugo now has:
 

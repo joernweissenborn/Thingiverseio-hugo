@@ -9,52 +9,33 @@ menu:
     parent: getting started
 next: /overview/usage
 prev: /overview/quickstart
-title: Installing Hugo
+title: Installing thingiverseIO
 weight: 20
 ---
 
-Hugo is written in [Go][] with support for multiple platforms.
+ThingiverseIO is mainly written in [Go][] and currently runs on Linux and Windows. Support for OSX is possible, but hasn't been implemented yet.
 
-The latest release can be found at [Hugo Releases](https://github.com/spf13/hugo/releases).
+You can find the latest release at [ThingiverseIO Releases](https://github.com/ThingiverseIO/thingiverseio/releases).
 We currently provide pre-built binaries for
-<i class="fa fa-windows"></i>&nbsp;Windows,
-<i class="fa fa-linux"></i>&nbsp;Linux,
-<i class="fa freebsd-19px"></i>&nbsp;FreeBSD
-and <i class="fa fa-apple"></i>&nbsp;OS&nbsp;X (Darwin)
-for x64, i386 and ARM architectures.
+<i class="fa fa-windows"></i>&nbsp;Windows
+and <i class="fa fa-linux"></i>&nbsp;Linux,
+supporting x64, i386 and ARM architectures.
 
-Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&nbsp;9 and Solaris.  See http://golang.org/doc/install/source for the full set of supported combinations of target operating systems and compilation architectures.
+ThingiverseIO can also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&nbsp;9 and Solaris.  See http://golang.org/doc/install/source for the full set of supported combinations of target operating systems and compilation architectures.
 
-## Installing Hugo (binary)
+However, for compiling you need [ZeroMQ](https://zeromq.org/).
 
-Installation is very easy. Simply download the appropriate version for your
-platform from [Hugo Releases](https://github.com/spf13/hugo/releases).
-Once downloaded it can be run from anywhere. You don't need to install
-it into a global location. This works well for shared hosts and other systems
-where you don't have a privileged account.
+Under Linux, your should be able to install it via your distributions package manager. You will most likely need the development version of the package, e.g. 'zeromq-dev(el)'.
 
-Ideally, you should install it somewhere in your `PATH` for easy use.
-`/usr/local/bin` is the most probable location.
+Also [GCC](https://gcc.gnu.org/) is required. Windows users can either use [MinGW](http://www.mingw.org/), [tdm-gcc](http://tdm-gcc.tdragon.net/) or [Cygwin](https://www.cygwin.com). Cygwin provides precompiled binaries for zeromq, which simplifies compilation.
 
-On OS&nbsp;X, if you have [Homebrew](http://brew.sh/), installation is even
-easier: just run `brew update && brew install hugo`.
+## Installing ThingiverseIO (binary)
 
-For a more detailed explanation follow the corresponding installation guides:
-
-- [Installation on OS X]({{< relref "tutorials/installing-on-mac.md" >}})
-- [Installation on Windows]({{< relref "tutorials/installing-on-windows.md" >}})
-
-### Installing Pygments (optional)
-
-The Hugo executable has one *optional* external dependency for source code highlighting (Pygments).
-
-If you want to have source code highlighting using the [highlight shortcode](/extras/highlighting/),
-you need to install the Python-based Pygments program. The procedure is outlined on the [Pygments home page](http://pygments.org/).
+  TBW
 
 ## Upgrading Hugo
 
-Upgrading Hugo is as easy as downloading and replacing the executable you’ve
-placed in your `PATH`.
+TBW
 
 
 ## Installing from source
@@ -62,7 +43,19 @@ placed in your `PATH`.
 ### Prerequisite tools for downloading and building source code
 
 * [Git](http://git-scm.com/)
-* [Go][] 1.5+
+* [GCC](https://gcc.gnu.org/)
+* [Go][] 1.5+ (Windows users must wait for 1.7, since building c-archives will only be supported from this release on. However, you can compile Go from the latest sources.)
+
+### Get ZeroMQ
+
+If available on your platform, you can use your package manager to get ZeroMQ. You will need the the headers as well, so install the development version, e.g. 'zeromq-dev'. Make sure that the provided version is 4.x, otherwise you need to install it from source.
+
+If you are on Linux, you can install it from source following [these instructions](http://zeromq.org/intro:get-the-software). 
+
+On Windows, you can not use the provided binaries, since they are build using the MSVC toolchain, which is not compatible with Go. You need to use [MinGW](http://www.mingw.org/), [tdm-gcc](http://tdm-gcc.tdragon.net/) or [Cygwin](https://www.cygwin.com).
+With Cygwin, you can download zeromq-devel with the package manager.
+
+Look [here](https://stackoverflow.com/questions/24138558/how-to-build-zeromq-with-mingw) for more detailed instructions. Warning: the [offical documention]() is outdated
 
 ### Get directly from GitHub
 
